@@ -145,7 +145,8 @@ public class Main {
             }else if(choice==3) {
                 System.out.println("Exit..");
                 System.out.println("-------------------------------------");
-                System.out.println("-------------------------------------\n");                break;
+                System.out.println("-------------------------------------\n");
+                break;
             }
         }
 
