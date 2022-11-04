@@ -1,6 +1,6 @@
-package com.company;
+package com.main;
 import tag.Tag;
-import java.util.*;
+
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.lang.String;
