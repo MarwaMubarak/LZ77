@@ -27,6 +27,8 @@ public class Main {
     }
 
     static int NumOfBits(int x){
+        if(x==0)
+            return 1;
         int ans=0;
         while (x>0){
             x/=2;
@@ -71,9 +73,9 @@ public class Main {
         mxBacking=NumOfBits(mxBacking);
         mxLen=NumOfBits(mxLen);
         mxChar=NumOfBits(mxChar);
-        int TagSize=mxBacking+mxLen+mxChar;
+        int TagSize=mxBacking+mxLen+8;
         // mxChar can be 8 byte to generalize
-        System.out.println("The Size of the Tag = "+mxBacking+" + "+mxLen+" + "+mxChar+" = "+TagSize+" Bits");
+        System.out.println("The Size of the Tag = "+mxBacking+" + "+mxLen+" + 8 = "+TagSize+" Bits");
         System.out.println("THe Size After Compression = "+tags.size()*TagSize + " Bits");
         System.out.println("THe Size Before Compression = "+txtSize*8 +" Bits");
     }
