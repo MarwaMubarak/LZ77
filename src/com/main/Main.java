@@ -30,8 +30,8 @@ public class Main {
 
     }
 
-    
-/// to calculate number of bits
+
+    /// to calculate number of bits
     static int NumOfBits(int x) {
         if (x == 0)
             return 1;
@@ -183,6 +183,29 @@ public class Main {
  * abaababaabbbbbbbbbbbba
  * ABAABABAABBBBBBBBBBBBA
  * <p>
+ * <p>
+ * searchBuffer->5 lookAheadBuffer->5
+ * ababababbbbbbabababab
+ * 8
+ * 0 0 a
+ * 0 0 b
+ * 2 2 a
+ * 4 3 b
+ * 2 2 b
+ * 1 1 a
+ * 2 2 b
+ * 3 3 b
+ * <p>
+ * searchBuffer->20 lookAheadBuffer->3
+ * abababababababab
+ * 7
+ * 0 0 a
+ * 0 0 b
+ * 2 2 a
+ * 2 2 b
+ * 2 2 a
+ * 2 2 b
+ * 2 1 b
  * <p>
  * searchBuffer->5 lookAheadBuffer->5
  * ababababbbbbbabababab
